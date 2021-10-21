@@ -10,11 +10,40 @@
       /* Put your styles here! */
       nav {
         background: hsl(280 20% 50%);
-        width: 100%;
+        max-width: 100%;
+        display: flex;
+        padding: 10px 25px;
+        align-items: center;
+        justify-content: space-between;
       }
 
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      /* Try > a */
+      nav ul a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        transition: all;
+        transition-duration: 200ms;
+      }
+
+      nav ul a:hover {
+        /* text-decoration: underline; */
+        color: hsl(280 20% 20%);
+      }
+
+      /* Show inspector tools */
+
       img {
-        width: 80px;
+        width: 90px;
       }
     </style>
   </head>
